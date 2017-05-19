@@ -14,4 +14,16 @@ public class Crime {
         //generation unique id
         mId = UUID.randomUUID();
     }
+
+    public UUID getmId() {
+        return mId;
+    }
+
+    public String getmTitle() {
+        return mTitle;
+    }
+
+    public void setmTitle(String mTitle) {
+        this.mTitle = mTitle;
+    }
 }
