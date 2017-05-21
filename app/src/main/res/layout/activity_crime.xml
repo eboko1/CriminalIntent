@@ -2,9 +2,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/fragmentConteiner"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+    android:id="@+id/fragmentLineaLayoutConteiner"
     android:layout_height="match_parent"
-   >
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
 
 
-
+    </LinearLayout>
 </FrameLayout>

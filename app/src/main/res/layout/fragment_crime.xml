@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,6 +14,8 @@
         android:id="@+id/crime_title"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:hint="@string/crime_title_hint"/>
 
     <TextView
@@ -24,14 +27,24 @@
         android:id="@+id/crime_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
-        android:padding="80dp"/>
+        android:layout_marginRight="16dp"
+        android:padding="40dp"/>
     <CheckBox
+        android:id="@+id/chb_solved"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/crime_solved_label" />
+    <TextView
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main2"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
 
 </LinearLayout>
