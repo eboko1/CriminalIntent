@@ -1,5 +1,7 @@
 package fvi.at.ua.criminalintent;
 
+import android.util.Log;
+
 import java.util.Date;
 import java.util.UUID;
 
@@ -8,7 +10,8 @@ import java.util.UUID;
  */
 
 public class Crime {
-    
+    private static final String TAG = "crime";
+
     private UUID mId;
     private String mTitle;
 
@@ -16,6 +19,7 @@ public class Crime {
     private boolean mSolved;
 
     public Crime(){
+    Log.d(TAG, "start constructor Crime");
         //generation unique id
         mId = UUID.randomUUID();
         mDate = new Date();

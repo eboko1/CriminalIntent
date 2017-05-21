@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,13 +28,17 @@ public class CrimeFragment extends Fragment {
     private Button mDateButton;
     private CheckBox mSolvedCheckBox;
 
+    private static final String TAG = "crimeFragment";
+
     @Override
     public void onCreate(Bundle savedInstanceState ){
+        Log.d(TAG, "start onCreate crimeFragmenty");
         super.onCreate(savedInstanceState);
         mCrime = new Crime();
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        Log.d(TAG, "start onCreateView crimeFragmenty");
         View v = inflater.inflate(R.layout.fragment_crime, container,false);
 
         mTitleField = (EditText)v.findViewById(R.id.crime_title);
