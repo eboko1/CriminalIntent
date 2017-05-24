@@ -27,4 +27,9 @@ public class CrimeLab {
         mCrimes = new ArrayList<>();
     }
 
+    public List<Crime> getmCrimes(){
+        return mCrimes;
+    }
+
+
 }
