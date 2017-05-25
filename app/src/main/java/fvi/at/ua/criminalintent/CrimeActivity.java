@@ -7,8 +7,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 
 
 public class CrimeActivity extends FragmentActivity  {
@@ -22,7 +20,7 @@ public class CrimeActivity extends FragmentActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "start onCreate CrimeActivity");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_crime);
+        setContentView(R.layout.activity_fragment);
 
         fm = getSupportFragmentManager();
         fragment = fm.findFragmentById(R.id.fragmentConteiner);
