@@ -26,6 +26,9 @@ public class CrimeLab {
 
     private CrimeLab(Context context){
         mCrimes = new ArrayList<>();
+        for(int i = 0; i < 100; i++){
+
+        }
     }
 
     public List<Crime> getmCrimes(){
